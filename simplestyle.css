@@ -8,7 +8,7 @@ input, textarea {background-color: #404040; color: white}
 }
 
 .title{ padding: 1em; margin: 1em 0; box-sizing: border-box; width: 100%;}
-body { margin:0; padding: 0; text-align: center; height: 90vh}
+body { margin:0; padding: 0; text-align: center; height: 80vh}
 .input, .collapsedInput {
 	width:100%;
 	transition: height 1s;
