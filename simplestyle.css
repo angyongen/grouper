@@ -8,17 +8,16 @@ input, textarea {background-color: #404040; color: white}
 }
 
 .title{ padding: 1em; margin: 1em 0; box-sizing: border-box; width: 100%;}
-body { margin:0; padding: 0 }
-h1, div {text-align: center;}
+body { margin:0; padding: 0; text-align: center; height: 90vh}
 .input, .collapsedInput {
 	width:100%;
 	transition: height 1s;
 }
-div>.collapsedInput {
+.collapsedInput {
 	height: 2em;
 }
-div>.input {
-	height:50vh;
+.input {
+	height:50%;
 }
 @media only screen and (min-width: 500px) {
  	.input, .collapsedInput {width:80%;}
