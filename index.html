@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grouper</title>
+	<meta name="description" content="Tries to randomly group people into groups of a certain size and make sure groups are not too big or too small">
+	<script src="grouper.js"></script>
+	<link rel="stylesheet" href="simplestyle.css">
+</head>
+<script>
+	function uncollapse(element) {
+		element.className = "input"
+	}
+	function collapse(element) {
+		element.className = "collapsedInput"
+	}
+	function regroup() {
+		var list = mainInputElement.value.trim().split("\n")
+		var groupSize = parseInt(groupSizeInputElement.value)
+		var result = groupRandomly(list, groupSize)
+		mainOutputElement.value = result
+		mainOutputElement.focus()
+	}
+</script>
+<body>
+	<div class="title">
+		<h1>Grouper</h1>
+		<span>Tries to randomly group people into groups of a certain size and make sure groups are not too big or too small</span>
+	</div>
+	<div>People:</div>
+	<div>
+		<textarea id="mainInput" class="input" onfocus="uncollapse(mainInputElement); collapse(mainOutputElement)"></textarea>
+	</div>
+	<div>Group Size:</div>
+	<div>
+		<input type="number" id="groupSizeInput"></input>
+	</div>
+	<div>
+		<button onclick="regroup()">Regroup NOW</button>
+	</div>
+	<div>
+		<textarea id="mainOutput" class="collapsedInput" onfocus="uncollapse(mainOutputElement); collapse(mainInputElement)"></textarea>
+	</div>
+	<script>
+		var mainInputElement = document.getElementById("mainInput")
+		var groupSizeInputElement = document.getElementById("groupSizeInput")
+		var mainOutputElement = document.getElementById("mainOutput")
+	</script>
+
+</body>

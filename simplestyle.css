@@ -1,0 +1,15 @@
+.title {background-color: orange; color: white; padding: 1em}
+h1, div {text-align: center;}
+.input, .collapsedInput {
+	width:100%;
+	transition: height 1s;
+}
+div>.collapsedInput {
+	height: 2em;
+}
+div>.input {
+	height:50vh;
+}
+@media only screen and (min-width: 500px) {
+ 	.input, .collapsedInput {width:80%;}
+}
