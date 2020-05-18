@@ -7,7 +7,7 @@ body {background-color: #101010; color: white;}
 input, textarea {background-color: #404040; color: white}
 }
 
-.title{ padding: 1em; margin: 1em 0}
+.title{ padding: 1em; margin: 1em 0; box-sizing: border-box; width: 100%;}
 body { margin:0; padding: 0 }
 h1, div {text-align: center;}
 .input, .collapsedInput {
