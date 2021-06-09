@@ -35,16 +35,16 @@
 </script>
 <body>
 	<a href="https://angyongen.github.io/" class="nav-block">EN WEB PAGE - HOME</a>
-		<div class="title">
-			<h1>Grouper</h1>
-			<span>Tries to randomly group people into groups of a certain size <br>and make sure groups are not too big or too small</span>
-		</div>
-		<div>People (one line per person):</div>
-		<textarea id="mainInput" class="input" onfocus="uncollapse(mainInputElement); collapse(mainOutputElement)"></textarea>
-		<div>Group Size:</div>
-		<input type="number" id="groupSizeInput"></input>
-		<div><button onclick="regroup()">Regroup NOW</button></div>
-		<textarea id="mainOutput" class="collapsedInput" onfocus="uncollapse(mainOutputElement); collapse(mainInputElement)"></textarea>
+	<div class="title">
+		<h1>Grouper</h1>
+		<span>Tries to randomly group people into groups of a certain size <br>and make sure groups are not too big or too small</span>
+	</div>
+	<div>People (one line per person):</div>
+	<textarea id="mainInput" class="input" onfocus="uncollapse(mainInputElement); collapse(mainOutputElement)"></textarea>
+	<div>Group Size:</div>
+	<input type="number" id="groupSizeInput"></input>
+	<div><button onclick="regroup()">Regroup NOW</button></div>
+	<textarea id="mainOutput" class="collapsedInput" onfocus="uncollapse(mainOutputElement); collapse(mainInputElement)"></textarea>
 
 	<script>
 		var mainInputElement = document.getElementById("mainInput")
