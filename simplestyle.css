@@ -1,13 +1,14 @@
-
-.title {background-color: orange; color: white; }
+.header-left {text-align: left; margin: 0.5em;}
+.standard.title {background-color: orange; color: white; }
+.error.title {background-color: red; color: white; }
 
 @media (prefers-color-scheme: dark) {
-.title {background-color: #7900ff; color: white; }
+.standard.title {background-color: #7900ff; color: white; }
 body {background-color: #101010; color: white;}
 input, textarea {background-color: #404040; color: white}
 }
 
-.title{ padding: 1em; margin: 1em 0; box-sizing: border-box; width: 100%;}
+.title{ padding: 1em; box-sizing: border-box; width: 100%;}
 body { margin:0; padding: 0; text-align: center; width: 100vw; height: 80vh}
 .input, .collapsedInput {
 	width:100%;
